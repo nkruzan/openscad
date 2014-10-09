@@ -210,7 +210,7 @@ void ScintillaEditor::setHighlightScheme(const QString &name)
     Solarized_light();
   }
   else if(name == "User Defined") {
-    Solarized_light();
+    userDefined();
   }
   else if(name == "Off") {
     noColor();
