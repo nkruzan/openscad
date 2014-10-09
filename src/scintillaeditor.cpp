@@ -188,6 +188,13 @@ void ScintillaEditor::noColor()
 	
 }
 
+void ScintillaEditor::userDefined()
+{
+  // open properties file
+  // read properties
+  // set scintilla options
+}
+
 void ScintillaEditor::setHighlightScheme(const QString &name)
 {
   if(name == "For Light Background") {
@@ -200,6 +207,9 @@ void ScintillaEditor::setHighlightScheme(const QString &name)
     Monokai();
   }
   else if(name == "Solarized") {
+    Solarized_light();
+  }
+  else if(name == "User Defined") {
     Solarized_light();
   }
   else if(name == "Off") {
